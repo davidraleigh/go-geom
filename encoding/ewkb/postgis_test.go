@@ -9,8 +9,8 @@ import (
 	_ "github.com/lib/pq"
 	"github.com/stretchr/testify/require"
 
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/encoding/ewkb"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/encoding/ewkb"
 )
 
 func TestPostGIS(t *testing.T) {

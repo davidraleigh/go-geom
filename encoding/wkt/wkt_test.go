@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/twpayne/go-geom"
+	"github.com/davidraleigh/go-geom"
 )
 
 func TestMarshalAndUnmarshal(t *testing.T) {

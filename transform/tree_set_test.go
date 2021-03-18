@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/sorting"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/sorting"
 )
 
 func TestTree(t *testing.T) {

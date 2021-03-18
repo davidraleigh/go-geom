@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/twpayne/go-geom"
+	"github.com/davidraleigh/go-geom"
 )
 
 // decode translates a WKT to the corresponding geometry.

@@ -6,9 +6,9 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/encoding/wkb"
-	"github.com/twpayne/go-geom/encoding/wkbcommon"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/encoding/wkb"
+	"github.com/davidraleigh/go-geom/encoding/wkbcommon"
 )
 
 var (

@@ -1,9 +1,9 @@
 package raycrossing
 
 import (
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/xy/internal/robustdeterminate"
-	"github.com/twpayne/go-geom/xy/location"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/xy/internal/robustdeterminate"
+	"github.com/davidraleigh/go-geom/xy/location"
 )
 
 // LocatePointInRing determine where the point is with regards to the ring

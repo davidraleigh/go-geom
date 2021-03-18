@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/bigxy"
-	"github.com/twpayne/go-geom/xy/orientation"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/bigxy"
+	"github.com/davidraleigh/go-geom/xy/orientation"
 )
 
 func TestOrientationIndex(t *testing.T) {

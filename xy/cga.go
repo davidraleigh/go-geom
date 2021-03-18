@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"math"
 
-	geom "github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/bigxy"
-	"github.com/twpayne/go-geom/xy/internal"
-	"github.com/twpayne/go-geom/xy/internal/raycrossing"
-	"github.com/twpayne/go-geom/xy/lineintersector"
-	"github.com/twpayne/go-geom/xy/location"
-	"github.com/twpayne/go-geom/xy/orientation"
+	geom "github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/bigxy"
+	"github.com/davidraleigh/go-geom/xy/internal"
+	"github.com/davidraleigh/go-geom/xy/internal/raycrossing"
+	"github.com/davidraleigh/go-geom/xy/lineintersector"
+	"github.com/davidraleigh/go-geom/xy/location"
+	"github.com/davidraleigh/go-geom/xy/orientation"
 )
 
 // OrientationIndex returns the index of the direction of the point <code>q</code> relative to

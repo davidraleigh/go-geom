@@ -3,8 +3,8 @@ package bigxy_test
 import (
 	"fmt"
 
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/bigxy"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/bigxy"
 )
 
 func ExampleOrientationIndex() {

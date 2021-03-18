@@ -1,6 +1,6 @@
 package xy
 
-import "github.com/twpayne/go-geom"
+import "github.com/davidraleigh/go-geom"
 
 // PointsCentroid computes the centroid of the point arguments
 //

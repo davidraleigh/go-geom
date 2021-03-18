@@ -3,7 +3,7 @@ package xyz
 import (
 	"math"
 
-	"github.com/twpayne/go-geom"
+	"github.com/davidraleigh/go-geom"
 )
 
 // VectorDot calculates the dot product of two vectors

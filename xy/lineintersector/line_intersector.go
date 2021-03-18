@@ -3,8 +3,8 @@ package lineintersector
 import (
 	"math"
 
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/xy/lineintersection"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/xy/lineintersection"
 )
 
 // Strategy is the line intersection implementation

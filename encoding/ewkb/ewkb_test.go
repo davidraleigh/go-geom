@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/internal/geomtest"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/internal/geomtest"
 )
 
 func test(t *testing.T, g geom.T, xdr, ndr []byte) {

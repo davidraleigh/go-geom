@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"strconv"
 
-	geom "github.com/twpayne/go-geom"
+	geom "github.com/davidraleigh/go-geom"
 )
 
 var nullGeometry = []byte("null")

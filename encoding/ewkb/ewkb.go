@@ -11,8 +11,8 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/encoding/wkbcommon"
+	"github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/encoding/wkbcommon"
 )
 
 var (

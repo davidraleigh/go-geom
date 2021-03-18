@@ -1,13 +1,13 @@
 package lineintersector
 
 import (
-	geom "github.com/twpayne/go-geom"
-	"github.com/twpayne/go-geom/bigxy"
-	"github.com/twpayne/go-geom/xy/internal"
-	"github.com/twpayne/go-geom/xy/internal/centralendpoint"
-	"github.com/twpayne/go-geom/xy/internal/hcoords"
-	"github.com/twpayne/go-geom/xy/lineintersection"
-	"github.com/twpayne/go-geom/xy/orientation"
+	geom "github.com/davidraleigh/go-geom"
+	"github.com/davidraleigh/go-geom/bigxy"
+	"github.com/davidraleigh/go-geom/xy/internal"
+	"github.com/davidraleigh/go-geom/xy/internal/centralendpoint"
+	"github.com/davidraleigh/go-geom/xy/internal/hcoords"
+	"github.com/davidraleigh/go-geom/xy/lineintersection"
+	"github.com/davidraleigh/go-geom/xy/orientation"
 )
 
 // RobustLineIntersector is a less performant implementation when compared to the non robust implementation but
