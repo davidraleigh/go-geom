@@ -2,7 +2,7 @@ package geom
 
 import "math"
 
-type geom0 struct {
+type Geom0 struct {
 	layout     Layout
 	stride     int
 	flatCoords []float64
@@ -10,7 +10,7 @@ type geom0 struct {
 }
 
 type geom1 struct {
-	geom0
+	Geom0
 }
 
 type geom2 struct {
@@ -24,48 +24,48 @@ type geom3 struct {
 }
 
 // Bounds returns the bounds of g.
-func (g *geom0) Bounds() *Bounds {
+func (g *Geom0) Bounds() *Bounds {
 	return NewBounds(g.layout).extendFlatCoords(g.flatCoords, 0, len(g.flatCoords), g.stride)
 }
 
 // Coords returns all the coordinates in g, i.e. a single coordinate.
-func (g *geom0) Coords() Coord {
+func (g *Geom0) Coords() Coord {
 	return inflate0(g.flatCoords, 0, len(g.flatCoords), g.stride)
 }
 
 // Empty returns true if g contains no coordinates.
-func (g *geom0) Empty() bool {
+func (g *Geom0) Empty() bool {
 	return len(g.flatCoords) == 0
 }
 
 // Ends returns the end indexes of sub-structures of g, i.e. an empty slice.
-func (g *geom0) Ends() []int {
+func (g *Geom0) Ends() []int {
 	return nil
 }
 
 // Endss returns the end indexes of sub-sub-structures of g, i.e. an empty
 // slice.
-func (g *geom0) Endss() [][]int {
+func (g *Geom0) Endss() [][]int {
 	return nil
 }
 
 // FlatCoords returns the flat coordinates of g.
-func (g *geom0) FlatCoords() []float64 {
+func (g *Geom0) FlatCoords() []float64 {
 	return g.flatCoords
 }
 
 // Layout returns g's layout.
-func (g *geom0) Layout() Layout {
+func (g *Geom0) Layout() Layout {
 	return g.layout
 }
 
 // NumCoords returns the number of coordinates in g, i.e. 1.
-func (g *geom0) NumCoords() int {
+func (g *Geom0) NumCoords() int {
 	return 1
 }
 
 // Reserve reserves space in g for n coordinates.
-func (g *geom0) Reserve(n int) {
+func (g *Geom0) Reserve(n int) {
 	if cap(g.flatCoords) < n*g.stride {
 		fcs := make([]float64, len(g.flatCoords), n*g.stride)
 		copy(fcs, g.flatCoords)
@@ -74,22 +74,22 @@ func (g *geom0) Reserve(n int) {
 }
 
 // SRID returns g's SRID.
-func (g *geom0) SRID() int {
+func (g *Geom0) SRID() int {
 	return g.srid
 }
 
-func (g *geom0) setCoords(coords0 []float64) error {
+func (g *Geom0) setCoords(coords0 []float64) error {
 	var err error
 	g.flatCoords, err = deflate0(nil, coords0, g.stride)
 	return err
 }
 
 // Stride returns g's stride.
-func (g *geom0) Stride() int {
+func (g *Geom0) Stride() int {
 	return g.stride
 }
 
-func (g *geom0) verify() error {
+func (g *Geom0) verify() error {
 	if g.stride != g.layout.Stride() {
 		return errStrideLayoutMismatch
 	}

@@ -186,9 +186,9 @@ func deriveDeepCopy_5(dst, src *MultiPolygon) {
 // deriveDeepCopy_6 recursively copies the contents of src into dst.
 func deriveDeepCopy_6(dst, src *Point) {
 	func() {
-		field := new(geom0)
-		deriveDeepCopy_11(field, &src.geom0)
-		dst.geom0 = *field
+		field := new(Geom0)
+		deriveDeepCopy_11(field, &src.Geom0)
+		dst.Geom0 = *field
 	}()
 }
 
@@ -204,9 +204,9 @@ func deriveDeepCopy_7(dst, src *Polygon) {
 // deriveDeepCopy_8 recursively copies the contents of src into dst.
 func deriveDeepCopy_8(dst, src *geom1) {
 	func() {
-		field := new(geom0)
-		deriveDeepCopy_11(field, &src.geom0)
-		dst.geom0 = *field
+		field := new(Geom0)
+		deriveDeepCopy_11(field, &src.Geom0)
+		dst.Geom0 = *field
 	}()
 }
 
@@ -265,7 +265,7 @@ func deriveDeepCopy_10(dst, src *geom3) {
 }
 
 // deriveDeepCopy_11 recursively copies the contents of src into dst.
-func deriveDeepCopy_11(dst, src *geom0) {
+func deriveDeepCopy_11(dst, src *Geom0) {
 	dst.layout = src.layout
 	dst.stride = src.stride
 	if src.flatCoords == nil {

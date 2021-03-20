@@ -13,7 +13,7 @@ func PointEmptyCoord() float64 {
 
 // A Point represents a single point.
 type Point struct {
-	geom0
+	Geom0
 }
 
 // NewPoint allocates a new Point with layout l and all values zero.
@@ -84,10 +84,6 @@ func (g *Point) SetCoords(coords Coord) (*Point, error) {
 func (g *Point) SetSRID(srid int) *Point {
 	g.srid = srid
 	return g
-}
-
-func (g *Point) SetSRIDEx(srid int) {
-	g.srid = srid
 }
 
 // Swap swaps the values of g and g2.
